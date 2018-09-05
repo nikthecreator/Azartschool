@@ -11,11 +11,10 @@
 .wrap-image {
     width: 50%;
     height: 75vh;
-    background-color: #fff;
     background-color: #000;
 }
 .wrap-text {
     width: 50%;
     height: 75vh;
-    background-color: #444444;
+    background-color: #fff;
 }
