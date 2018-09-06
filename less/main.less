@@ -95,7 +95,14 @@ section {
 .text {
     width: 50%;
     height: 75vh;
-    background-color: @light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-content {
+        width: 70%;
+        height: 66%;
+        background-color: @black;
+    }
 }
 .map {
     width: 50%;
