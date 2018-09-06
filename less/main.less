@@ -3,8 +3,8 @@ body {
 }
 
 // Colors 
-@black: #212121;
-@light: #fff;
+@black: #000000;
+@light: #EEEEEE;
 @red: #E81123;
 
 // Header
@@ -25,7 +25,14 @@ section {
 .image {
     width: 50%;
     height: 75vh;
-    background-color: @black;
+    background-color: @light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-slider {
+        width: 70%;
+        height: 70%;
+    }
 }
 .text {
     width: 50%;
