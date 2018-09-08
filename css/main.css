@@ -9,7 +9,7 @@ a {
 }
 section {
   width: 100%;
-  height: 75vh;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,12 +115,38 @@ section {
 }
 .about {
   width: 85%;
-  height: 60vh;
-  background-color: #000000;
+  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.slider {
+  width: 40%;
+  height: 100%;
+}
+.fotorama {
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e81123;
+}
+.text {
+  width: 50%;
+  height: 100%;
+  background-color: #000000;
 }
