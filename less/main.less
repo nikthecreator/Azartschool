@@ -1,7 +1,7 @@
 body {
     font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 a {
     text-decoration: none;
@@ -27,11 +27,31 @@ section {
 }
 
 // Colors 
-@black: #000000;
+@black: #212121;
 @light: #ffffff;
 @red: #E81123;
 
 // Buttons 
+#myBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    background-color: transparent;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: @black 1px solid;
+    border-radius: 5rem;
+    transition: 0.4s;
+    &:hover {
+        background-color: @black;
+        color: @light;
+        cursor: pointer;
+    }
+    &:focus {
+        outline: none;
+    }
+}
 .button-contact {
     display: flex;
     justify-content: center;
@@ -58,10 +78,6 @@ section {
         border: @black 1px solid;
         border-radius: 5rem;
         transition: 0.4s;
-    }
-    &-1:hover {
-        background-color: @black;
-        color: @light;
     }
 }
 #logo {
@@ -102,7 +118,20 @@ section {
             margin-left: 5rem;
             padding-top: 5rem;
             width: 70%;
+            height: 3rem;
+        }
+        &-text {
+            line-height: 1.5;
+            font-weight: 300;
+            margin-left: 5rem;
+            width: 50%;
             height: 5rem;
+        }
+        &-button {
+            padding-top: 5rem;
+            margin-left: 5rem;
+            width: 100%;
+
         }
     }
     &-bottom {
@@ -140,11 +169,48 @@ section {
 .text {
     width: 50%;
     height: 100%;
-    background-color: @black;
     &-tittle {
         width: 100%;
-        height: 20%;
+        height: 15%;
         background-color: @light;
+    }
+    &-content {
+        width: 100%;
+        height: 70%;
+        background-color: @light;
+    }
+    &-button {
+        width: 100%;
+        height: 15%;
+    }
+}
+.link {
+    width: 20rem;
+    height: 3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-text {
+        font-size: 1rem;
+        color: #333333
+    }
+    &-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        background-color: transparent;
+        height: 2rem;
+        font-size: 1rem;
+        border: @black 1px solid;
+        border-radius: 5rem;
+        transition: 0.4s;
+        font-size: 1.2rem;
+        &:hover {
+            background-color: @black;
+            color: @light;
+        }
     }
 }
 // Tittle
@@ -156,12 +222,25 @@ section {
     &-head {
         font-family: 'Lora', serif;
         font-weight: 400;
-        font-size: 2rem;
+        font-size: 2.2rem;
         color: @black;
     }
 }
+.header-text {
+    font-size: 1.5rem;
+}
 
-
+// Footer
+.footer {
+    margin: auto;
+    width: 85%;
+    height: 5rem;
+    border-top: 1px solid #444444;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -173,12 +252,16 @@ section {
 .email {
     margin-top: 2rem;
 }
-
+.label-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
 input {
     width: 25rem;
     height: 2rem;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid @black;
     font-size: 1.2rem;
     &:focus {
         outline: none;

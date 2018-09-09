@@ -1,11 +1,11 @@
 body {
   font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 a {
   text-decoration: none;
-  color: #000000;
+  color: #212121;
   display: inline-block;
 }
 section {
@@ -21,6 +21,33 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
+#myBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+  background-color: transparent;
+  height: 2.5rem;
+  font-size: 1rem;
+  border: #212121 1px solid;
+  border-radius: 5rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+#myBtn:hover {
+  background-color: #212121;
+  color: #ffffff;
+  cursor: pointer;
+}
+#myBtn:focus {
+  outline: none;
+}
 .button-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,13 +62,13 @@ section {
   height: 2.2rem;
   background-color: #ffffff;
   font-size: 1rem;
-  border: #000000 1px solid;
+  border: #212121 1px solid;
   border-radius: 5rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 .button-contact:hover {
-  background-color: #000000;
+  background-color: #212121;
   color: #ffffff;
 }
 .button-contact-1 {
@@ -58,19 +85,15 @@ section {
   height: 2.2rem;
   background-color: #ffffff;
   font-size: 1rem;
-  border: #000000 1px solid;
+  border: #212121 1px solid;
   border-radius: 5rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.button-contact-1:hover {
-  background-color: #000000;
-  color: #ffffff;
-}
 #logo {
   font-family: 'Lora', serif;
   font-size: 1.2rem;
-  color: #000000;
+  color: #212121;
 }
 .header {
   width: 100%;
@@ -117,7 +140,19 @@ section {
   margin-left: 5rem;
   padding-top: 5rem;
   width: 70%;
+  height: 3rem;
+}
+.header-content-text {
+  line-height: 1.5;
+  font-weight: 300;
+  margin-left: 5rem;
+  width: 50%;
   height: 5rem;
+}
+.header-content-button {
+  padding-top: 5rem;
+  margin-left: 5rem;
+  width: 100%;
 }
 .header-bottom {
   width: 100%;
@@ -137,7 +172,7 @@ section {
 .map {
   width: 40%;
   height: 100%;
-  background-color: #000000;
+  background-color: #212121;
 }
 .fotorama {
   width: 100%;
@@ -160,35 +195,109 @@ section {
 .text {
   width: 50%;
   height: 100%;
-  background-color: #000000;
 }
 .text-tittle {
   width: 100%;
-  height: 20%;
+  height: 15%;
   background-color: #ffffff;
+}
+.text-content {
+  width: 100%;
+  height: 70%;
+  background-color: #ffffff;
+}
+.text-button {
+  width: 100%;
+  height: 15%;
+}
+.link {
+  width: 20rem;
+  height: 3rem;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.link-text {
+  font-size: 1rem;
+  color: #333333;
+}
+.link-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5rem;
+  background-color: transparent;
+  height: 2rem;
+  font-size: 1rem;
+  border: #212121 1px solid;
+  border-radius: 5rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 1.2rem;
+}
+.link-btn:hover {
+  background-color: #212121;
+  color: #ffffff;
 }
 .tittle {
   font-family: 'Lora', serif;
   font-weight: 400;
   font-size: 1.5rem;
-  color: #000000;
+  color: #212121;
 }
 .tittle-head {
   font-family: 'Lora', serif;
   font-weight: 400;
-  font-size: 2rem;
-  color: #000000;
+  font-size: 2.2rem;
+  color: #212121;
+}
+.header-text {
+  font-size: 1.5rem;
+}
+.footer {
+  margin: auto;
+  width: 85%;
+  height: 5rem;
+  border-top: 1px solid #444444;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .name,
 .phone,
 .email {
   margin-top: 2rem;
 }
+.label-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
 input {
   width: 25rem;
   height: 2rem;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #212121;
   font-size: 1.2rem;
 }
 input:focus {
