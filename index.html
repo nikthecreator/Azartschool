@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/normalize.css"> 
     <link rel="stylesheet" href="css/main.css">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
@@ -17,11 +21,11 @@
     <div class="header">
         <div class="header-wrapper">
             <div class="header-nav">
-                <a href="./index.html" class="button-contact-1">A</a>
+                <a href="./index.html" class="button-contact-1"><span id="logo">A</span></a>
                 <a href="#" class="button-contact">Контакты</a>
             </div>
             <div class="header-content">
-
+                    <button id="myBtn">Запись на курс</button>
             </div>
             <div class="header-bottom">
 
@@ -39,7 +43,7 @@
                     data-allowfullscreen="true">
                     <div class="slide">
                         <span>
-                            Google
+                            ФОТОСТУДИЯ АЗАРТ
                         </span>
                     </div>
                     <img src="./img/0102.jpg" alt="">
@@ -47,7 +51,16 @@
                 </div>
             </div>
             <div class="text">
+                <div class="text-tittle">
+                    <span class="tittle">
+                        Фотостудия Азарт
+                    </span>
+                </div>
+                <div class="text-content">
+                    <p>
 
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -55,7 +68,11 @@
     <section>
             <div class="about">
                 <div class="text">
-                    
+                    <div class="text-tittle">
+                        <span class="tittle">
+                            О курсе
+                        </span>
+                    </div>
                 </div>
                 <div class="slider">
                         <div class="fotorama" 
@@ -63,7 +80,7 @@
                         data-allowfullscreen="true">
                         <div class="slide">
                             <span>
-                                Google
+                                О Курсе
                             </span>
                         </div>
                         <img src="./img/0102.jpg" alt="">
@@ -81,7 +98,7 @@
                             data-allowfullscreen="true">
                             <div class="slide">
                                 <span>
-                                    Google
+                                    ФОТОСТУДИЯ
                                 </span>
                             </div>
                             <img src="./img/0102.jpg" alt="">
@@ -89,17 +106,64 @@
                         </div>
                     </div>
                     <div class="text">
-        
+                        <div class="text-tittle">
+                            <span class="tittle">
+                                По итогу курса
+                            </span>
+                        </div>
                     </div>
                 </div>
             </section>
-    
-     <footer>
 
-     </footer>
+            <section>
+                    <div class="about">
+                        <div class="text">
+                            <div class="text-tittle">
+                                <span class="tittle">
+                                    Контакты
+                                </span>
+                            </div>
+                        </div>
+                        <div class="map">
+                            
+                            </div>
+                    </div>
+                </section>
+    
+    <footer>
+
+    </footer>
+
+
+    <!-- The Modal Window -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="form">
+                    <div class="form-group">
+                        <div class="name">
+                            <label for="Name"><span>Name</span></label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="email">
+                            <label for="email"><span>Email</span></label>
+                            <input type="text" id="email">
+                        </div>
+                        <div class="phone">
+                            <label for="phone"><span>Phone</span></label>
+                            <input type="text" id="phone">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
