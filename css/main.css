@@ -113,6 +113,12 @@ section {
   background-image: url(../img/header-bg-min.jpg);
   background-size: cover ;
 }
+.header-content-tittle {
+  margin-left: 5rem;
+  padding-top: 5rem;
+  width: 70%;
+  height: 5rem;
+}
 .header-bottom {
   width: 100%;
   height: 18vh;
@@ -165,6 +171,12 @@ section {
   font-family: 'Lora', serif;
   font-weight: 400;
   font-size: 1.5rem;
+  color: #000000;
+}
+.tittle-head {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 2rem;
   color: #000000;
 }
 .name,
