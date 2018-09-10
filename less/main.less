@@ -1,338 +1,86 @@
 body {
+    margin: 0;
+    padding: 0;
     font-size: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
 }
 a {
     text-decoration: none;
-    color: @black;
-    display: inline-block;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-// Specifications
-section {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-// Mixins
-.wrapper () {
-    width: 85%;
-    height: 40vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-// Colors 
-@black: #212121;
+// Colors
+@black: #131418;
+@grey: #333333;
 @light: #ffffff;
-@red: #E81123;
 
-// Buttons 
-#myBtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15rem;
-    background-color: transparent;
-    height: 2.5rem;
-    font-size: 1rem;
-    border: @black 1px solid;
-    border-radius: 5rem;
-    transition: 0.4s;
-    &:hover {
-        background-color: @black;
-        color: @light;
-        cursor: pointer;
-    }
-    &:focus {
-        outline: none;
-    }
-}
-.button-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// Buttons
+.contact-btn {
     width: 10rem;
-    height: 2.2rem;
-    background-color: @light;
-    font-size: 1rem;
-    border: @black 1px solid;
-    border-radius: 5rem;
-    transition: 0.4s;
+    height: 3rem;
+    border: 1px solid @black;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
     &:hover {
         background-color: @black;
         color: @light;
     }
-    &-1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 2.2rem;
-        height: 2.2rem;
-        background-color: @light;
-        font-size: 1rem;
-        border: @black 1px solid;
-        border-radius: 5rem;
-        transition: 0.4s;
-    }
 }
-#logo {
-    font-family: 'Lora', serif;
-    font-size: 1.2rem;
-    color: @black;
-}
-
-// Header
-.header {
+ 
+// Header Container
+.container-fluid {
     width: 100%;
     height: 100vh;
-    background-color: @light;
     display: flex;
     justify-content: center;
     align-items: center;
-    &-wrapper {
-        margin: auto;
-        width: 85%;
-        height: 90vh;
-        background-color: @light;
-    }
+}
+// Header
+.header {
+    width: 85%;
+    height: 90%;
     &-nav {
         width: 100%;
-        height: 2rem;
-        background-color: @light;
+        height: 3rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 3rem;
     }
     &-content {
+        margin-top: 3rem;
         width: 100%;
-        height: 70vh;
-        background-image: url(../img/header-bg-min.jpg);
-        background-size: cover ;
-        &-tittle {
-            margin-left: 5rem;
-            padding-top: 5rem;
-            width: 70%;
-            height: 3rem;
-        }
-        &-text {
-            line-height: 1.5;
-            font-weight: 300;
-            margin-left: 5rem;
-            width: 50%;
-            height: 5rem;
+        height: 90%;
+        &-page {
+            width: 100%;
+            height: 85%;
+            background-color: @black;
         }
         &-button {
-            padding-top: 5rem;
-            margin-left: 5rem;
             width: 100%;
-
+            height: 15%;
         }
     }
-    &-bottom {
-        width: 100%;
-        height: 18vh;
-    }
 }
-
-// First section
-// About Azart studio
-
-.about {
-    .wrapper();
-}
-// Slider
-.slider,
-.map {
-    width: 40%;
-    height: 100%;
-    background-color: @black;
-}
-.fotorama {
-    width: 100%;
-    height: 100%;
-}
-.slide {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: @red;
-}
-// Text
-.text {
-    width: 50%;
-    height: 100%;
-    &-tittle {
-        width: 100%;
-        height: 15%;
-        background-color: @light;
-    }
-    &-content {
-        width: 100%;
-        height: 70%;
-        font-size: 1rem;
-        color: @red;
-        background-color: @light;
-    }
-    &-button {
-        width: 100%;
-        height: 15%;
-    }
-}
-.info {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: @black;
-}   
-.link {
-    width: 20rem;
+.logo {
+    width: 3rem;
     height: 3rem;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &-text {
-        font-size: 1rem;
-        color: #333333
-    }
-    &-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 5rem;
-        background-color: transparent;
-        height: 2rem;
-        font-size: 1rem;
-        border: @black 1px solid;
-        border-radius: 5rem;
-        transition: 0.4s;
-        font-size: 1.2rem;
-        &:hover {
-            background-color: @black;
-            color: @light;
-            cursor: pointer;
-        }
-        &:focus {
-            outline: none;
-        }
-    }
-}
-// Tittle
-.tittle {
-    font-family: 'Lora', serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: @black;
-    &-head {
-        font-family: 'Lora', serif;
-        font-weight: 400;
-        font-size: 2.2rem;
-        color: @black;
-    }
-}
-.header-text {
-    font-size: 1.5rem;
-}
-
-
-
-// Footer
-.footer {
-    margin: auto;
-    width: 85%;
-    height: 5rem;
-    border-top: 1px solid #444444;
-    margin-top: 5rem;
+    border: 1px solid @black;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 100rem;
 }
 
-
-
-// --------------------------------
-// Modal Window
-// Modal Specifications
-.name,
-.phone,
-.email {
-    margin-top: 2rem;
-}
-.label-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 0.8rem;
-}
-input {
-    width: 25rem;
-    height: 2rem;
-    border: none;
-    border-bottom: 1px solid @black;
-    font-size: 1.2rem;
-    &:focus {
-        outline: none;
-    }
-}
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1;
-    padding-top: 100px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4); 
-    &-content {
-        background-color: @light;
-        margin: auto;
-        padding: 20px;
-        width: 30rem;
-        margin: auto;
-        &-head {
-            margin: auto;
-            width: 30rem;
-            height: 10%;
-        }
-    }
-}
-.close {
-    color: @black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
+// Modal
 .close:focus {
-    color: @black;
-    text-decoration: none;
-    cursor: pointer;
+    outline: none;
 }
-.form {
-    margin: auto;
-    width: 25rem;
-    height: 30rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &-group {
-        width: 25rem;
-        height: 15rem;
-    }
+.modal-dialog {
+    padding-top: 10rem;
+    border: none;
+    
 }
-
-
-
-
-
- 
