@@ -23,6 +23,12 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact-btn:hover {
+  background-color: #131418;
+  color: #ffffff;
 }
 .container-fluid {
   width: 100%;
