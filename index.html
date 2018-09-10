@@ -18,11 +18,11 @@
 <body>
 
     <!-- Header -->
-    <div class="header">
+    <div class="header" id="header" name="header">
         <div class="header-wrapper">
             <div class="header-nav">
                 <a href="./index.html" class="button-contact-1"><span id="logo">A</span></a>
-                <a href="#" class="button-contact">Контакты</a>
+                <a href="#contacts" class="button-contact">Контакты</a>
             </div>
             <div class="header-content">
                 <div class="header-content-tittle">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="header-content-text">
                     <p class="header-text">
-                            Курс рассчитан для любителей и новичков в деле фотографии, которые хотят узнать все тонкости работы фотографа
+                        Курс рассчитан для любителей и новичков в деле фотографии, которые хотят узнать все тонкости работы фотографа
                     </p>
                 </div>
                 <div class="header-content-button">
@@ -48,7 +48,7 @@
     <!-- First section -->
     <!-- About Azart -->
     <section>
-        <div class="about">
+        <div class="about" id="azart" name="azart">  
             <div class="slider">
                 <div class="fotorama" 
                     data-nav="false"
@@ -92,7 +92,7 @@
     <!-- Second section -->
     <!-- About curse -->
     <section>
-            <div class="about">
+            <div class="about" id="curse" name="curse">
                     <div class="text">
                             <div class="text-tittle">
                                 <span class="tittle">
@@ -100,19 +100,17 @@
                                 </span>
                             </div>
                             <div class="text-content">
-                                <p>
-                                    
-                                </p>
+                                <p class="info">Этот курс будет Вам интересен тем, что Вы непосредственно почувствуете причастность к профессиональной съемке! Теоретическая часть курса совмещена с практической, на которой Вы познакомитесь со студийным оборудованием, научитесь самостоятельно с ним работать и даже реализовывать свои идеи в ходе обучения. Помимо технической части занятий, студенты курса: научатся разбираться в композиции, познакомятся с творчеством известных фотографов мира и главное, узнают истоки возникновения фотографии.</p>
                             </div>
                             <div class="text-button">
-                                <a href="http://azartstudio.by/">
+                                <a href="#">
                                     <div class="link">
                                         <div class="link-text">
-                                             САЙТ AZARTSTUDIO
+                                             ПОДРОБНЕЕ О КУРСЕ
                                         </div>
-                                        <div class="link-btn">
+                                        <button id="infoBtn" class="link-btn">
                                             >
-                                        </div>
+                                        </button>
                                     </div>
                                 </a>
                             </div>
@@ -133,8 +131,10 @@
             </div>
         </section>
 
+        <!-- Third slide -->
+        <!-- Advantages -->
         <section>
-                <div class="about">
+                <div class="about" >
                     <div class="slider">
                         <div class="fotorama" 
                             data-nav="false"
@@ -154,17 +154,32 @@
                                 По итогу курса
                             </span>
                         </div>
+                        <div class="text-content">
+                            <p class="info">Вы научитесь передавать трехмерное пространство на плоскость</p>
+                            <p class="info">Вы перестанете использовать авто режим</p>
+                            <p class="info">Вы сможете передавать состояния эмоции и образы</p>
+                            <p class="info">Вы сможете сочинять оригинальные образы</p>
+                            <p class="info">Реализовывать  фантазии</p>
+                            <p class="info">Вы сможете сочинять оригинальные образы</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
+            <!-- Contacts -->
             <section>
-                    <div class="about">
+                    <div class="about" id="contacts" name="contacts">
                         <div class="text">
                             <div class="text-tittle">
                                 <span class="tittle">
                                     Контакты
                                 </span>
+                            </div>
+                            <div class="text-content">
+                                <p class="info">Наш адрес: Пушкина, 31а (ТЦ "Алми")</p>
+                                <p class="info">8 (0152) 681-999</p>
+                                <p class="info"> +375 (33) 6-681-999 (Viber)</p>
+                                <p class="info">studioazart_oldcity@mail.ru</p>
                             </div>
                         </div>
                         <div class="map">
@@ -182,6 +197,9 @@
     <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
+            <div class="modal-content-head">
+                <span class="close">&times;</span>
+            </div>
             <div class="form">
                     <div class="form-group">
                         <div class="name">
@@ -201,10 +219,19 @@
         </div>
     </div>
 
+    <!-- The Modal Window -->
+    <div id="modalInfo" class="modal">
+            <!-- Modal content -->
+            <div class="modal-info">
+                <div class="modal-info-head">
+                    <span class="close">&times;</span>
+                </div>
+                
+            </div>
+    </div>
 
 
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <script src="./js/main.js"></script>
