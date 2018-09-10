@@ -89,3 +89,77 @@ a:hover {
           align-items: center;
   border-radius: 100rem;
 }
+.name,
+.phone,
+.email {
+  margin-top: 2rem;
+}
+.label-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+input {
+  width: 25rem;
+  height: 2rem;
+  border: none;
+  border-bottom: 1px solid #131418;
+  font-size: 1.2rem;
+}
+input:focus {
+  outline: none;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 30rem;
+  margin: auto;
+}
+.modal-content-head {
+  margin: auto;
+  width: 30rem;
+  height: 10%;
+}
+.close {
+  color: #131418;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #131418;
+  text-decoration: none;
+  cursor: pointer;
+}
+.form {
+  margin: auto;
+  width: 25rem;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form-group {
+  width: 25rem;
+  height: 15rem;
+}
