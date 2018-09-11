@@ -49,7 +49,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
+    transition: all 0.4s;
     color: @light;
     background-color: transparent;
     &:hover {
@@ -61,7 +61,6 @@ a {
         outline: none;
     }
 }
-
 .contact-btn {
     scroll-behavior: smooth;
     width: 10rem;
@@ -71,10 +70,70 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
+    transition:  all 0.4s;
     &:hover {
         background-color: @black;
         color: @light;
+    }
+}
+.link-item {
+    margin-left: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid @black;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    color: @black;
+    background-color: transparent;
+    &:hover {
+        width: 6rem;
+        background-color: @black;
+        color: @light;
+    }
+}
+.btn-curse {
+    width: 10rem;
+    height: 3rem;
+    border: 1px solid @black;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    color: @black;
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+        width: 15rem;
+        background-color: @black;
+        color: @light;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.btn-close {
+    width: 10rem;
+    height: 3rem;
+    border: 1px solid @black;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    color: @black;
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+        width: 15rem;
+        background-color: @black;
+        color: @light;
+    }
+    &::focus {
+        outline: none;
     }
 }
 // Header Container
@@ -167,12 +226,26 @@ a {
     &-footer {
         width: 100%;
         height: 5vh;
+        &-link {
+            width: 50%;
+            height: 5vh;
+            color: @black;
+            display: flex;
+            align-items: center;
+            &:hover {
+                color: @black;
+            }
+        }
     }
-
 }
 #advantages {
     display: flex;
     justify-content: flex-end;
+}
+.contact {
+    width: 100%;
+    height: 50vh;
+    background-color: @active;
 }
 // Modal
 .close:focus {
@@ -250,4 +323,9 @@ input {
     &:focus {
         outline: none;
     }
+}
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
