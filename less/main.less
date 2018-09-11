@@ -13,8 +13,9 @@ a {
 
 // Colors
 @black: #131418;
-@grey: #333333;
+@grey: #9E9E9E;
 @light: #ffffff;
+@active: #1E88E5;
 
 // Buttons
 .btnHead {
@@ -133,12 +134,74 @@ a {
     height: 50vh;
     background-color: @black;
 }
+
 // Modal
 .close:focus {
     outline: none;
 }
 .modal-dialog {
-    padding-top: 10rem;
+    margin-top: 10rem;
     border: none;
+}
 
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// Form
+.wrap-form {
+    width: 90%;
+}
+.form-group {
+    margin-top: 2rem;
+    width: 100%;
+}
+.wrap-input {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 85%;
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid @grey;
+    transition: all 0.5s;
+    font-size: 1rem;
+    &:focus {
+        border-color: @active;
+        outline: none;
+        width: 100%;
+    }
+}
+.wrap-btn {
+    margin: auto;
+    width: 85%;
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btn-submit {
+    width: 35%;
+    height: 3rem;
+    border: none;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    background-color: @black;
+    &:hover {
+        width: 100%;
+        cursor: pointer;
+        background-color: @black;
+        color: @black;
+    }
+    &:focus {
+        outline: none;
+    }
 }
