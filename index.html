@@ -145,30 +145,111 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="contact">
-                        <div class="row">   
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                    Пушкина, 31а (ТЦ "Алми")
-
-                                    8 (0152) 609-459
-                                   
-                                    +375 (33) 3-577-199 (Viber)
-                                   
-                                    studioazart@mail.ru
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                    Дубко, 17 (ТЦ "OldCity")
-
-                                    8 (0152) 681-999
-                                   
-                                    +375 (33) 6-681-999 (Viber)
-                                   
-                                    studioazart_oldcity@mail.ru
+                        <div class="contact-header">
+                                <span class="title">Контакты</span>
+                        </div>
+                        <div class="contact-content">
+                            <div class="row">   
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                     <div class="contact-page">
+                                           <div class="content-page-item">
+                                               <div class="contact-info">
+                                                   <div class="contact-info-icon">
+                                                        <img src="img/icons/placeholder-filled-point.svg" alt="" width="20px" height="20px">
+                                                   </div>
+                                                   <div class="contact-info-text">
+                                                        <span class="content-font"> Пушкина, 31а (ТЦ "Алми")</span>
+                                                   </div>
+                                               </div>
+                                               <div class="contact-info">
+                                                    <div class="contact-info-icon">
+                                                         <img src="./img/icons/call-answer.svg" alt="" width="20px" height="20px">
+                                                    </div>
+                                                    <div class="contact-info-text">
+                                                            <span class="content-font"> 8 (0152) 609-459</span>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-info">
+                                                   <div class="contact-info-icon">
+                                                        <img src="./img/icons/smartphone-call.svg" alt="" width="20px" height="20px">
+                                                    </div>
+                                                    <div class="contact-info-text">
+                                                       <span class="content-font"> +375 (33) 3-577-199 (Viber)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-info">
+                                                    <div class="contact-info-icon">
+                                                         <img src="./img/icons/sent-mail.svg" alt="" width="20px" height="20px">
+                                                    </div>
+                                                    <div class="contact-info-text">
+                                                        <span class="content-font">studioazart@mail.ru</span>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                     </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="contact-page">
+                                        <div class="content-page-item">
+                                            <div class="contact-info">
+                                                <div class="contact-info-icon">
+                                                    <img src="img/icons/placeholder-filled-point.svg" alt="" width="20px" height="20px">
+                                                </div>
+                                                <div class="contact-info-text">
+                                                    <span class="content-font">Дубко, 17 (ТЦ "OldCity")</span>
+                                                </div>
+                                            </div>
+                                            <div class="contact-info">
+                                                <div class="contact-info-icon">
+                                                    <img src="./img/icons/call-answer.svg" alt="" width="20px" height="20px">
+                                                </div>
+                                                <div class="contact-info-text">
+                                                    <span class="content-font"> 8 (0152) 681-999</span>
+                                                </div>
+                                            </div>
+                                            <div class="contact-info">
+                                                <div class="contact-info-icon">
+                                                    <img src="./img/icons/smartphone-call.svg" alt="" width="20px" height="20px">
+                                                </div>
+                                                <div class="contact-info-text">
+                                                    <span class="content-font">+375 (33) 6-681-999 (Viber)</span>
+                                                </div>
+                                            </div>
+                                            <div class="contact-info">
+                                                <div class="contact-info-icon">
+                                                    <img src="./img/icons/sent-mail.svg" alt="" width="20px" height="20px">
+                                                </div>
+                                                <div class="contact-info-text">
+                                                     <span class="content-font">studioazart_oldcity@mail.ru</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="map"></div>
+                    <div class="map">
+                        
+                    </div>
+                    <script>
+                            function initMap() {
+                              var uluru = {lat: 53.6905138, lng: 23.8680805};
+                              var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 14,
+                                center: uluru
+                              });
+                              var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                              });
+                            }
+                          </script>
+                          <script async defer
+                          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBhaoi6RZC9uRY9WwuKp7iIzIVZUh9Nhc&callback=initMap">
+                          </script>
                 </div>
             </div>
           </div>
