@@ -19,12 +19,18 @@ a {
 @grey: #9E9E9E;
 @light: #ffffff;
 @active: #1E88E5;
+@close: #E81123;
 
 // Fonts 
 .title {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     font-weight: 700;
+    &-contacts {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        
 }
 .content-font {
     font-family: 'Roboto', sans-serif;
@@ -32,6 +38,12 @@ a {
     line-height: 1.3;
     &-info {
         font-size: 1rem;
+    }
+    &-contacts {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.3;
+        color: @light;
     }
 }
 .link-font {
@@ -129,7 +141,7 @@ a {
     &:hover {
         cursor: pointer;
         width: 15rem;
-        background-color: @black;
+        background-color: @close;
         color: @light;
     }
     &::focus {
@@ -289,7 +301,7 @@ a {
     }
 }
 #contacts {
-    background-color: @active;
+    background-color: @black;
 }
 // Modal
 .close:focus {
@@ -367,9 +379,4 @@ input {
     &:focus {
         outline: none;
     }
-}
-.modal-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
