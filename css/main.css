@@ -411,6 +411,15 @@ a:hover {
 #contacts {
   background-color: #131418;
 }
+.social {
+  margin-top: 5rem;
+  width: 50%;
+  height: 10rem;
+  color: #fff;
+}
+.social-links {
+  margin-top: 2rem;
+}
 .close:focus {
   outline: none;
 }
