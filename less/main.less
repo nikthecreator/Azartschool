@@ -23,6 +23,20 @@ strong {
 @active: #1E88E5;
 @close: #E81123;
 
+// Mixins 
+// Fonts 
+.title-content () {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.text-content () {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
 // Fonts 
 .title {
     font-family: 'Roboto', sans-serif;
@@ -35,11 +49,11 @@ strong {
         font-weight: 700;
     }  
 }
+.content-title {
+    .title-content();
+}
 .content-font {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    font-weight: 300;
+   .text-content();
     &-info {
         font-size: 1rem;
     }
